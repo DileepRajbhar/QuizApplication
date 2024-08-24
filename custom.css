@@ -1,0 +1,101 @@
+/* Reset and Box-Sizing */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@400;700&display=swap');
+
+/* Body Styling */
+body {
+    background-color: #6F1E51;
+    font-family: 'Roboto Serif', serif;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Main Container */
+.main {
+    width: 90%;
+    max-width: 600px;
+    background-color: #fff;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Quiz Box */
+#box {
+    width: 100%;
+}
+
+/* Question Styling */
+#quesBox {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+/* Option Rows */
+.row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+/* Radio Inputs */
+.options {
+    margin-right: 15px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+/* Labels */
+label {
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* Submit Button */
+.btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.1rem;
+    color: #fff;
+    background-color: #6F1E51;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background-color: #8e2a66;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .main {
+        padding: 20px;
+    }
+
+    #quesBox {
+        font-size: 1.1rem;
+    }
+
+    label {
+        font-size: 0.95rem;
+    }
+
+    .btn {
+        font-size: 1rem;
+        padding: 10px;
+    }
+}
